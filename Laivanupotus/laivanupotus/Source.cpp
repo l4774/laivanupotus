@@ -1,16 +1,16 @@
-#include <iostream>
-using namespace std;
-
-const int MAX_TAULU = 4;
-
-int main()
-{
-	int taulu[MAX_TAULU] = { 2,7,1,3 };
-	int i = 0;
-	int j = 0;
-
+#include <iostream> 
+using namespace std;  
+ 
+const int MAX_TAULU = 4; 
+ 
+int main() 
+{ 
+	int taulu[MAX_TAULU] = { 2,7,1,3 }; 
+	int i = 0; 
+	int j = 0; 
+	 
 	cout << "Alkuperainen" << endl;
-	for (i = 0; i < MAX_TAULU; i++)
+	for (i = 0; i < MAX_TAULU; i++) 
 		cout << taulu[i] << " ";
 	cout << endl;
 
@@ -28,6 +28,6 @@ int main()
 	for (i = 0; i < MAX_TAULU; i++)
 		cout << taulu[i] << " ";
 	cout << endl;
-	//juupeli
+	//juupeli kyllä
 	return 0;
 }
