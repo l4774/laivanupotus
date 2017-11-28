@@ -28,6 +28,6 @@ int main()
 	for (i = 0; i < MAX_TAULU; i++)
 		cout << taulu[i] << " ";
 	cout << endl;
-	//juupeli kyllä
+	//juupeli kyllä nhgjhg
 	return 0;
 }
