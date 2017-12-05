@@ -34,6 +34,7 @@ struct PLAYER {
 }player[3]; //Ignore player 0, just using player's 1 & 2
 
 enum DIRECTION { HORIZONTAL, VERTICAL };
+
 struct PLACESHIPS {
 	DIRECTION direction;
 	SHIP shipType;
@@ -160,7 +161,7 @@ bool GameOverCheck(int enemyPLAYER)
 	for (int w = 0; w<BOARD_WIDTH; ++w) {
 		for (int h = 0; h<BOARD_HEIGHT; ++h) {
 			//If any ships remain, game is NOT over
-			if (player[enemyPLAYER].grid[w][h] = isSHIP)
+			if (player[enemyPLAYER].grid[w][h] == isSHIP)
 			{
 				winner = false;
 				return winner;
