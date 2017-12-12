@@ -67,6 +67,7 @@ int main()
 	//*****************************************************************************
 
 	//Ready to play the game
+	int turns;
 	gameRunning = true;
 	int thisPlayer = 1;
 	do {
@@ -92,16 +93,18 @@ int main()
 		//Check to see if the game is over
 		//If 0 is returned, nobody has won yet
 		int aWin = GameOverCheck(enemyPlayer);
+		turns = TurnCounter(thisPlayer);
 		if (aWin != 0) {
 			gameRunning = false;
 			break;
 		}
+
 		//Alternate between each player as we loop back around
 		thisPlayer = (thisPlayer == 1) ? 2 : 1;
 	} while (gameRunning);
 
 	system("cls");
-	cout << "\n\nCONGRATULATIONS!!!  PLAYER " << thisPlayer << " HAS WON THE GAME!\n\n\n\n";
+	cout << "\n\nCONGRATULATIONS!!!  PLAYER " << thisPlayer << " HAS WON THE GAME IN " << turns <<" TURNS!\n\n\n\n";
 
 	system("pause");
 	return 0;

@@ -49,7 +49,7 @@ void DrawBoard(int);
 PLACESHIPS UserInputShipPlacement();
 bool UserInputAttack(int&, int&, int);
 bool GameOverCheck(int);
-
+int TurnCounter(int);
 
 extern SHIP ship[];
 extern PLAYER player[];

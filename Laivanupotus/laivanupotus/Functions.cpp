@@ -116,3 +116,17 @@ bool GameOverCheck(int enemyPLAYER)
 	//If we get here, somebody won, game over!
 	return winner;
 }
+
+int TurnCounter(int thisPlayer)
+{
+	static int turns[2];
+	if (thisPlayer == 1) {
+	turns[0] = turns[0]++;
+	return turns[0];
+	}
+	else
+	{
+		turns[1] = turns[1]++;
+		return turns[1];
+	}
+}
